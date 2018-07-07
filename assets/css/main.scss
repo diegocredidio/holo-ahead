@@ -1,20 +1,240 @@
-@import '~bulma/sass/utilities/initial-variables';
-@import '~bulma/sass/utilities/functions';
+// Your variable overrides
+$body-bg: #fff;
+$body-color: #222;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$font-big: 2.5em;
+$font-medium: 1.8em;
+$font-small: 1.5em;
+
+$orange: #ffb900;
+
+// Bootstrap and its default variables
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'bootstrap-custom';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400i,700,700i,800,800i');
 
-// customize styles
-$black: #000;
-$family-sans-serif: 'Open Sans', sans-serif;
-
-@import '~bulma';
+// Bootstrap 4 media queries mixins
+// @include media-breakpoint-down(xs) { ... }
+// @include media-breakpoint-down(sm) { ... }
+// @include media-breakpoint-down(md) { ... }
+// @include media-breakpoint-down(lg) { ... }
+// @include media-breakpoint-down(xl) { ... }
 
 // HEADER
 .hero-image {
-  //   width: 100%;
+  width: 100%;
   height: 700px;
   background: url('~/assets/images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  //   background-attachment: fixed;
+  // background-attachment: fixed;
+}
+
+// HOLO
+.hero-white {
+  width: 100%;
+  min-height: 400px;
+  background: url('~/assets/images/bg-white.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0;
+  // background-attachment: fixed;
+}
+.holo-title-h1 {
+  background-color: $orange;
+  transform: skew(-10deg);
+  padding: 0 20px;
+  margin-left: 20px;
+
+  .title-text {
+    transform: skew(10deg);
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    font-size: $font-big;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+.holo-title-orange {
+  color: $orange;
+  font-weight: 800;
+  font-style: italic;
+  font-size: $font-big;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.holo-image {
+  text-align: center;
+  margin: 20px 0;
+  img {
+    max-width: 90%;
+  }
+}
+.text-upper {
+  font-weight: 100;
+  font-size: $font-big * 0.8;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.text-whatis {
+  font-weight: 300;
+  font-size: $font-small * 0.8;
+  font-style: italic;
+  line-height: 1.2em;
+
+  .bolder {
+    font-weight: 800;
+  }
+}
+
+.big-ita-bold {
+  font-weight: 800;
+  font-style: italic;
+  font-size: $font-big;
+  letter-spacing: -2px;
+}
+.line-half {
+  line-height: 0.5;
+}
+
+.text-pad-left {
+  padding-left: 20px;
+}
+
+.title1 {
+  grid-area: t1;
+}
+.title2 {
+  grid-area: t2;
+}
+.holo1 {
+  grid-area: holo;
+}
+#portabilidade {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-template-areas:
+    't1 holo'
+    't2 holo';
+}
+
+.surpreenda {
+  background-color: $orange;
+  padding: 1vw;
+}
+.surpreenda-title {
+  color: white;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+.surpreenda-text {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.bullet-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 1em;
+}
+
+@include media-breakpoint-down(sm) {
+  .title-text,
+  .holo-title-orange {
+    font-size: $font-small !important;
+  }
+  .hero-image {
+    height: 700px;
+    background-position: calc(50% + 120px) 50%;
+  }
+  .text-upper {
+    font-size: $font-small * 0.8;
+  }
+  .big-ita-bold {
+    font-size: $font-small;
+    letter-spacing: -2px;
+  }
+  .holo-image {
+    img {
+      max-width: 80%;
+    }
+  }
+  #portabilidade {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      't1'
+      'holo'
+      't2';
+  }
+  .title2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .surpreenda-title {
+    font-size: 1em;
+    text-align: center;
+  }
+  .surpreenda-text {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .logo-bullets {
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+    img {
+      width: 100px;
+    }
+  }
+  .advantages-list {
+    ul {
+      padding: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .title-text,
+  .holo-title-orange {
+    font-size: $font-medium !important;
+  }
+  .text-upper {
+    font-size: $font-medium * 0.8;
+  }
+  .big-ita-bold {
+    font-size: $font-medium;
+    letter-spacing: -2px;
+  }
+  .text-whatis {
+    font-size: $font-small * 0.7;
+  }
+  .video-person {
+    display: none;
+  }
+  .video-logo {
+    margin-bottom: 4vw !important;
+  }
+  .surpreenda-title {
+    font-size: 3em;
+  }
+  .surpreenda-text {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .logo-bullets {
+    width: 20vw;
+  }
 }
