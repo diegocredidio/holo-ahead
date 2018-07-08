@@ -21,6 +21,12 @@ $orange: #ffb900;
 // @include media-breakpoint-down(lg) { ... }
 // @include media-breakpoint-down(xl) { ... }
 
+.nav-content {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
 // HEADER
 .hero-image {
   width: 100%;
@@ -174,6 +180,179 @@ $orange: #ffb900;
 .tagline {
   width: 350px;
 }
+.mesmice-content {
+  height: 50vw;
+  max-height: 850px;
+  background-image: url('~/assets/images/mesmice-content.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+.comofunciona-content {
+  margin-top: 15px;
+  height: 42vw;
+  max-height: 850px;
+  background-image: url('~/assets/images/como-funciona.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+.precos-top {
+  background-color: $orange;
+  padding: 20px 0;
+}
+.precos-logo {
+  img {
+    padding: 20px 10px;
+    height: 100px;
+  }
+}
+.precos-title {
+  color: white;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 3.5em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.precos-subtitle {
+  color: black;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2.5em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  line-height: 0.7em;
+}
+.precos-table {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+.precos-table-img {
+  height: 50vw;
+  background-image: url('~/assets/images/price-table.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.contato-title {
+  color: $orange;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2.5em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.contato-links {
+  color: white;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2em;
+  line-height: 1em;
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  ul {
+    list-style: none;
+    li {
+      display: inline;
+    }
+  }
+}
+.contato-telefones {
+  text-align: right;
+}
+.aviso-container {
+  color: black;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.bg-footer {
+  width: 100%;
+  height: 800px;
+  background: url('~/assets/images/bg-footer.jpg');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-attachment: fixed;
+}
+.footer-contacts {
+  background-color: white;
+  color: black;
+  font-weight: 800;
+  font-style: italic;
+  padding: 20px 0;
+}
+.footer-links {
+  a {
+    color: black;
+  }
+}
+.copyright {
+  text-align: right;
+  font-weight: 300;
+}
+
+@include media-breakpoint-down(lg) {
+  .hero-image {
+    background: url('~/assets/images/hero-lg.jpg');
+    height: 700px;
+    background-position: center;
+  }
+  .title-text,
+  .holo-title-orange {
+    font-size: $font-medium;
+  }
+  .text-upper {
+    font-size: $font-medium * 0.8;
+  }
+  .big-ita-bold {
+    font-size: $font-medium;
+    letter-spacing: -2px;
+  }
+  .text-whatis {
+    font-size: $font-small * 0.7;
+  }
+  .video-person {
+    display: none;
+  }
+  .video-logo {
+    margin-bottom: 4vw !important;
+  }
+  .surpreenda-title {
+    font-size: 3em;
+  }
+  .surpreenda-text {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .logo-bullets {
+    width: 20vw;
+  }
+  .contato-links {
+    font-size: 1.5em;
+  }
+  .contato-title {
+    font-size: 1.5em;
+  }
+  .bg-footer {
+    background: url('~/assets/images/bg-footer-lg.jpg');
+    height: 800px;
+    background-position: center;
+  }
+}
 
 @include media-breakpoint-down(sm) {
   .title-text,
@@ -183,7 +362,7 @@ $orange: #ffb900;
   .hero-image {
     background: url('~/assets/images/hero-sm.jpg') !important;
     height: 700px;
-    background-position: calc(50% + 120px) 50% !important;
+    background-position: calc(50% + 100px) 50% !important;
   }
   .text-upper {
     font-size: $font-small * 0.8;
@@ -234,42 +413,61 @@ $orange: #ffb900;
   .holo-title {
     font-size: 5vw !important;
   }
-}
-
-@include media-breakpoint-down(lg) {
-  .hero-image {
-    background: url('~/assets/images/hero-lg.jpg');
-    height: 700px;
-    background-position: center;
+  .mesmice-content {
+    height: 75vw;
+    background-image: url('~/assets/images/mesmice-content-sm.png');
   }
-  .title-text,
-  .holo-title-orange {
-    font-size: $font-medium !important;
+  .comofunciona-content {
+    height: 90vw;
+    background-image: url('~/assets/images/como-funciona-sm.png');
   }
-  .text-upper {
-    font-size: $font-medium * 0.8;
+  .precos-logo {
+    img {
+      padding: 10px 0px !important;
+      height: 13vw !important;
+    }
   }
-  .big-ita-bold {
-    font-size: $font-medium;
-    letter-spacing: -2px;
+  .precos-title {
+    font-size: 2em;
   }
-  .text-whatis {
-    font-size: $font-small * 0.7;
+  .precos-subtitle {
+    font-size: 1.5em;
+    line-height: 1em;
   }
-  .video-person {
-    display: none;
+  .precos-table-img {
+    height: 1000px;
+    background-image: url('~/assets/images/price-table-sm.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
   }
-  .video-logo {
-    margin-bottom: 4vw !important;
-  }
-  .surpreenda-title {
-    font-size: 3em;
-  }
-  .surpreenda-text {
-    font-size: 1.2em;
+  .contato-title {
     text-align: center;
   }
-  .logo-bullets {
-    width: 20vw;
+  .contato-links {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .contato-telefones {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .aviso-icone {
+    display: none;
+  }
+  .bg-footer {
+    background: url('~/assets/images/bg-footer-sm.jpg');
+    height: 780px;
+    background-position: calc(50% + 30px) 50% !important;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+  .copyright {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .nav-content {
+    font-size: 0.5em;
   }
 }

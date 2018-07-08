@@ -7,6 +7,8 @@
     <Surpreenda />
     <Bullets />
     <Mesmice />
+    <Precos />
+    <Footer />
     <nuxt/>
   </div>
 </template>
@@ -19,6 +21,8 @@ import Portabilidade from '~/components/Portabilidade.vue'
 import Surpreenda from '~/components/Surpreenda.vue'
 import Bullets from '~/components/Bullets.vue'
 import Mesmice from '~/components/Mesmice.vue'
+import Precos from '~/components/Precos.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   components: {
@@ -28,7 +32,9 @@ export default {
     Portabilidade,
     Surpreenda,
     Bullets,
-    Mesmice
+    Mesmice,
+    Precos,
+    Footer
   }
 }
 </script>

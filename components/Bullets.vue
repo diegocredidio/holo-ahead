@@ -1,5 +1,5 @@
 <template>
-    <section class="is-dark bullets-bg">
+    <section class="is-dark bullets-bg" id="diferenciais-link">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 logo-bullets">
