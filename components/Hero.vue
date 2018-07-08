@@ -9,13 +9,11 @@
             <p>nas ruas</p>
         </div>
         <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    Large title
-                </h1>
-                <h2 class="subtitle">
-                    Large subtitle
-                </h2>
+            <div class="container tagline-content">
+                <div class="tag1"></div>
+                <div class="tag2">
+                    <img class="tagline" src="~/assets/images/tagline.png">
+                </div>
             </div>
         </div> -->
     </section>
@@ -30,12 +28,5 @@
   text-align: right;
   h1 {
   }
-}
-.holo-title {
-  font-weight: 100;
-  color: white;
-  font-size: 3vw;
-  font-style: italic;
-  text-transform: uppercase;
 }
 </style>
