@@ -6,6 +6,7 @@
     <Portabilidade />
     <Surpreenda />
     <Bullets />
+    <Mesmice />
     <nuxt/>
   </div>
 </template>
@@ -17,6 +18,7 @@ import Video from '~/components/Video.vue'
 import Portabilidade from '~/components/Portabilidade.vue'
 import Surpreenda from '~/components/Surpreenda.vue'
 import Bullets from '~/components/Bullets.vue'
+import Mesmice from '~/components/Mesmice.vue'
 
 export default {
   components: {
@@ -25,7 +27,8 @@ export default {
     Video,
     Portabilidade,
     Surpreenda,
-    Bullets
+    Bullets,
+    Mesmice
   }
 }
 </script>
