@@ -22,12 +22,6 @@ module.exports = {
     { src: '~/assets/css/main.scss', lang: 'scss' },
     { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
   ],
-
-  modules: [
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-122072753-1'
-    }]
- ],
   /*
   ** Customize the progress bar color
   */
@@ -35,6 +29,9 @@ module.exports = {
   /*
   ** Build configuration
   */
+ plugins: [
+  { src: '~plugins/ga.js', ssr: false }
+],
   build: {
     /*
     ** Run ESLint on save
