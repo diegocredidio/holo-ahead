@@ -22,6 +22,12 @@ module.exports = {
     { src: '~/assets/css/main.scss', lang: 'scss' },
     { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
   ],
+
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-122072753-1'
+    }]
+ ],
   /*
   ** Customize the progress bar color
   */
