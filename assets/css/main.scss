@@ -305,6 +305,68 @@ $orange: #ffb900;
   font-weight: 300;
 }
 
+// malchimp
+.response {
+  color: $green;
+  border: 1px solid $green;
+  padding: 20px;
+  text-align: center;
+}
+.form {
+  &_msg {
+    margin-top: 3rem;
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+}
+.mc-field-group {
+  margin-top: 1rem;
+  label {
+    margin-right: 1rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+  input {
+  }
+  .email {
+    width: 400px;
+  }
+  #mce-NAME {
+    width: 400px;
+  }
+}
+div.mce_inline_error {
+  font-weight: 400 !important;
+  margin: 0 0 1em 0;
+  padding: 5px 10px;
+  background-color: transparent !important;
+  border: 1px solid $red;
+  color: $red !important;
+  margin-top: 5px !important;
+}
+.mc-field-group {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+
+    li {
+      label {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+#mc-embedded-subscribe {
+  color: black;
+  background-color: #ffb900;
+  border: none;
+  padding: 0.5rem 3rem;
+  margin-bottom: 3rem;
+}
+
 @include media-breakpoint-down(lg) {
   .hero-image {
     background: url('~/assets/images/hero-lg.jpg');
@@ -469,5 +531,24 @@ $orange: #ffb900;
   }
   .nav-content {
     font-size: 0.65em;
+  }
+  .mc-field-group {
+    margin-top: 1rem;
+    label {
+      margin-right: 1rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+    input {
+    }
+    .email {
+      width: 100%;
+    }
+    #mce-NAME {
+      width: 100%;
+    }
+    .label-down {
+      width: 100%;
+    }
   }
 }
