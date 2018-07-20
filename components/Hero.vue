@@ -1,22 +1,16 @@
 <template>
-    <!-- HERO -->
-    <section class="is-dark hero-image">
-        <!-- <div class="hero-offset-left">
-            <h1 class="holo-title">
-                Inovação e Alto Impacto
-            </h1>
-            <p>onde o eleitor está,</p>
-            <p>nas ruas</p>
+    <section>
+        <div class="header-video">
+            <video width="4000" autoplay controls loop poster="~/assets/images/header.jpg">
+                <source src="~/assets/videos/holo-hero.mp4" type="video/mp4">
+                <!-- <source src="mov_bbb.ogg" type="video/ogg"> Your browser does not support HTML5 video. -->
+            </video>
         </div>
-        <div class="hero-body">
-            <div class="container tagline-content">
-                <div class="tag1"></div>
-                <div class="tag2">
-                    <img class="tagline" src="~/assets/images/tagline.png">
-                </div>
-            </div>
-        </div> -->
+        <!-- HERO IMAGE -->
+        <section class="is-dark hero-image">
+        </section>
     </section>
+
 </template>
 
 
@@ -28,5 +22,12 @@
   text-align: right;
   h1 {
   }
+}
+.header-video {
+  background-color: black;
+}
+video {
+  max-width: 100%;
+  height: auto;
 }
 </style>
