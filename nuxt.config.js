@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'holo-ahead',
+    title: 'Holo Ahead - A vida se passa na rua',
     meta: [
       { charset: 'utf-8' },
       {
