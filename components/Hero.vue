@@ -1,11 +1,10 @@
 <template>
     <section>
-        <div class="header-video">
+        <!-- <div class="header-video">
             <video width="4000" autoplay controls loop poster="~/assets/images/header.jpg">
                 <source src="~/assets/videos/holo-hero.mp4" type="video/mp4">
-                <!-- <source src="mov_bbb.ogg" type="video/ogg"> Your browser does not support HTML5 video. -->
             </video>
-        </div>
+        </div> -->
         <!-- HERO IMAGE -->
         <section class="is-dark hero-image">
         </section>

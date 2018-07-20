@@ -2,7 +2,7 @@
   <div>
     <Header/>
     <Hero/>
-    <!-- <Video /> -->
+    <Video />
     <Portabilidade />
     <Surpreenda />
     <Bullets />
