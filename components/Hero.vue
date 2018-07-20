@@ -1,10 +1,10 @@
 <template>
     <section>
-        <!-- <div class="header-video">
-            <video width="4000" autoplay controls loop poster="~/assets/images/header.jpg">
+        <div class="header-video">
+            <video autoplay="true" loop="true" muted="" style="" poster="~/assets/images/header.jpg">
                 <source src="~/assets/videos/holo-hero.mp4" type="video/mp4">
             </video>
-        </div> -->
+        </div>
         <!-- HERO IMAGE -->
         <section class="is-dark hero-image">
         </section>
@@ -24,9 +24,10 @@
 }
 .header-video {
   background-color: black;
+  position: relative;
+  overflow: hidden;
 }
-video {
-  max-width: 100%;
-  height: auto;
+.header-video video {
+  width: 100%;
 }
 </style>

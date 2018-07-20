@@ -166,7 +166,7 @@
                         <img src="~/assets/images/aviso.png" width="40vw">
                     </div>
                     <div class="col-11">
-                        <p>Todos os planos e valores são vigentes até 15 de Julho de 2018.
+                        <p>Todos os planos e valores são vigentes até 30 de Julho de 2018.
                             <br>Período de locação: da data da contratação até 07 de Outubro de 2018.</p>
                     </div>
                 </div>

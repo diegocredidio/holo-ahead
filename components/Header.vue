@@ -16,6 +16,9 @@
                         <a class="nav-link" href="#planos-link">planos</a>
                     </li>
                     <li class="nav-item active">
+                        <a class="nav-link" href="#contato-link">contato</a>
+                    </li>
+                    <li class="nav-item active">
                         <a class="nav-link" href="https://medium.com/holo-ahead">news</a>
                     </li>
                 </ul>
