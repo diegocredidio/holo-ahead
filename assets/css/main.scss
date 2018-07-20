@@ -52,6 +52,7 @@ $orange: #ffb900;
 }
 
 .hero-news {
+  overflow: hidden;
   width: 100%;
   min-height: 400px;
   background: url('~/assets/images/bg-news.jpg');
