@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="header-video">
-            <video autoplay muted loop playsinline poster="/header.jpg" style="margin-top: 40px;">
+            <video autoplay loop playsinline poster="/header.jpg" style="margin-top: 40px;">
                 <!-- <video autoplay="true" loop="true" muted="" style="" poster="~/assets/images/header.jpg"> -->
                 <source src="~/assets/videos/holo-hero.mp4" type="video/mp4">
             </video>
